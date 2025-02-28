@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+  
+  .flag {
+    width: 900px;
+    height: 600px;
+    background-color: rgb(206, 17, 38); /* Crvena boja */
+    position: relative;
+}
+.flag > div {
+  width: 900px;
+  height: 300px;
+  background-color: rgb(0, 40, 104);
+  position: absolute;
+  top: 150px;
+}
+.flag > div > div {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  left: 350px;
+  top: 50px;
+}
+div > div > p {
+  position: relative;
+  text-align: center;
+  font-size: 67px;
+  bottom: 50px;
+}
+.flag > p {
+  position: absolute;
+  left: 330px;
+  font-size: 67px;
+  top: -65px;
+  color: white;
+}
+  
+  </style>
+</head>
+
+<!-- VAŽNO! Nemoj mijenjati HTML kod. 
+ Nemojte dodavati klase/ID-ove/elemente Umjesto toga, koristi ono što smo učili o kombiniranju selektora i specifičnosti CSS-a. 
+ Savjet 1: Zastava je dimenzija 900px x 600px, a krug je 200px x 200px. 
+ Savjet 2: Možešete koristiti CSS inspect elemet sa ovog linka da dobijteš boje s https://appbrewery.github.io/flag-of-laos/ -->
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
